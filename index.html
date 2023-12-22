@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<header>
+    <div>
+        <h1>Sorting Visualizer </h1>
+    </div>
+  <div class="nav_bar">
+
+    <!-- New Array -->
+    <div class="newArrBtn">
+        <button class="newArray btn sort_btn">New Array</button>
+    </div>
+    <!-- Speed and Size -->
+    <div class="sz_sp">
+        <span class="inputs">Size
+          <input class="ss" id="size" type="range" min="5" max="100" step=2 value=60>
+        </span>
+        <span  class="inputs">Speed
+            <input class="ss" id="speed" type="range" min="5" max="100" stepdown=8 value=30 >
+          </span>
+    </div>
+    <!-- Buttons -->
+    <div class="btn_sorts">
+        <button class="btn sort_btn bubbleSort "> <span class="span"></span>Bubble Sort</button>
+        <button class="btn sort_btn insertionSort">Insertion Sort</button>
+        <button class="btn sort_btn mergeSort">Merge Sort</button>
+        <button class="btn sort_btn selectionSort">Selection Sort</button>
+        <button class="btn sort_btn quickSort">Quick sort</button>
+    </div>
+</div>
+</header>
+<body>
+    <div id="bars" class="flex-contain"></div>
+    
+
+    <script src="Js_files/sorting.js"></script>
+    <script src="Js_files/bubble.js"></script>
+    <script src="js_files/insertion.js"></script>
+    <script src="js_files/selection.js"></script>
+    <script src="js_files/merge.js"></script>
+    <!-- <script src="Js_files/quick.js"></script> -->
+    <script src="Js_files/quick.js"></script>
+
+</body>
+</html>
